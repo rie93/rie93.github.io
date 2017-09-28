@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="is">
+   <head>
+      <title>Apollo</title>
+      <meta charset="utf-8">
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <ul class="menu-list">
+            <li><a href="#">Bio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li class="menu-close"></li>
+         </ul>
+         <header class="container-header">
+            <div class="wrapper">
+               <nav>
+                  <div class="container-header__menu">
+                     <span>MENU</span>
+                     <img src="img/menu.png" alt="menu" class="menu">
+                  </div>
+               </nav>
+                                 <div class="container-header__title">
+                     <h1><b>Apollo</b> PSD Template</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  </div>
+            </div>
+         </header>
+         <section class="container-introduction">
+            <div class="wrapper">
+               <div class="container-introduction__title">
+                  <h2>My name is <b>Apollo</b></h2>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste 
+natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                  <p>Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+               </div>
+               <div class="container-introduction__hrefs">
+                  <a href="#"><img src="img/facebook.png" alt="soc"></a>
+                  <a href="#"><img src="img/insta.png" alt="soc"></a>
+                  <a href="#"><img src="img/twitter.png" alt="soc"></a>
+                  <a href="#"><img src="img/pinterest.png" alt="soc"></a>
+               </div>
+            </div>
+         </section>
+         <section class="container-slider">
+            <div class="wrapper">
+               <div class="fade">
+                  <img src="img/sliderItem1.png" alt="item">
+                  <img src="img/sliderItem5.jpg" alt="item">
+                  <img src="img/sliderItem6.jpg" alt="item">
+                  <img src="img/sliderItem7.jpg" alt="item">
+               </div>
+            </div>
+         </section>
+         <section class="container-features">
+            <div class="wrapper">
+               <div class="container-features__title">
+                  <h2>Ut enim ad minim</h2>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+ipsum quia dolor sit amet, consectetur, adipisci velit, sed</p>
+               </div>
+               <img src="img/featuresBack.png" alt="pic">
+            </div>
+         </section>
+         <section class="container-multiple-slider">
+            <div class="wrapper">
+               <div class="multiple-items">
+                  <img src="img/sliderItem2.png" alt="pics">
+                  <img src="img/sliderItem3.png" alt="pics">
+                  <img src="img/sliderItem4.png" alt="pics">
+                   <img src="img/sliderItem2.png" alt="pics">
+                  <img src="img/sliderItem3.png" alt="pics">
+                  <img src="img/sliderItem4.png" alt="pics">
+               </div>
+            </div>
+         </section>
+         <footer class="container-footer">
+            <div class="wrapper">
+               <div class="container-footer__title">
+                  <h2>Say Hello</h2>
+                  <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </span>
+               </div>
+               <form>
+                  <input type="text" id="email" placeholder="email" required>
+                  <input type="text" id="subject" placeholder="subject">
+                  <textarea placeholder="Message" required></textarea>
+                  <button type="submit">Send Message</button>
+               </form>
+            </div>
+         </footer>
+      </div>
+   </body>
+   <script  src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script  src="slick.min.js"></script>
+<script>
+			$(document).ready(function(){
+	$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 1100,
+  fade: true,
+  autoplay:true,
+  cssEase: 'linear'
+});
+
+
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  autoplay:true,
+  slidesToScroll: 1
+});
+});
+
+;(function() {
+
+var menuButton = document.querySelector('.menu');
+var content = document.querySelector('.container');
+var list = document.querySelector('.menu-list');
+var close = document.querySelector('.menu-close');
+var b =document.querySelector('body');
+console.log(b);
+menuButton.addEventListener('click', function (event) {
+   event.preventDefault;
+   b.classList.toggle('mask');
+   list.classList.toggle('show-menu');
+   console.log(content);
+});
+close.addEventListener('click', function(event) {
+    event.preventDefault;
+    b.classList.remove('mask');
+   list.classList.remove('show-menu');
+})
+
+})();
+</script>
+</html>

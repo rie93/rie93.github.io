@@ -1,0 +1,177 @@
+.container {
+  max-width:1600px;
+  padding:50px;
+  font-family: roman;
+  transition-duration:1s;
+  margin:0 auto;
+  
+	 h2 {
+	 margin:0;
+	 }
+	 h1 {
+	 margin:0;
+	 }
+	 p {
+	 margin:0;
+	 }
+	 .wrapper {
+	 max-width:1500px;
+	 margin:0 auto;
+	 }
+
+	 &-mask {
+	position:absolute;
+	width:100%;
+	height:100vh;
+	background:rgba(0, 0, 0, 0.8);
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:100;
+
+}
+
+}
+
+@import "normalize.css";
+@import "blocks/header.scss";
+@import "blocks/introduction.scss";
+@import "blocks/slider.scss";
+@import "blocks/features.scss";
+@import "blocks/footer.scss";
+@import "blocks/multiple-slider.scss";
+
+@font-face { 
+font-family: roman;
+src: url(../fonts/lmromanslant10-regular.otf);
+}
+
+@media(max-width:870px) {
+  .container {
+  &-features {
+   .wrapper {
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   }
+   img {
+   margin:0;
+   width:80%;
+   height:50%;
+   }
+   &__title {
+   width:80%;
+   margin:0;
+   }
+  }
+  &-header {
+  nav {
+  justify-content:center;
+
+  }
+  &__title {
+  text-align:center;
+  width:100%;
+  padding:0;
+  }
+  }
+  &-introduction {
+  .wrapper {
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   text-align:center;
+  }
+  &__title {
+  text-align:center;
+  width:80%;
+  padding:0;
+   p {
+   color:white;
+   }
+  }
+  &__hrefs {
+  margin:0;
+  padding:0;
+  width:100%;
+  }
+  }
+  &-footer {
+  .wrapper {
+  form {
+  width:80%;
+  #email {
+  width:100%;
+  margin:0;
+  margin-bottom:30px;
+  }
+  #subject {
+  width:100%;
+  }
+  button {
+  margin-bottom:30px;
+  }
+  }
+  }
+  }
+  }
+	
+}
+
+	 .mask {
+	position:fixed;
+	margin:auto;
+	width:100%;
+	height:100vh;
+	background:rgba(0, 0, 0, 0.9);
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:300;
+
+}
+
+.menu-list {
+display:none;
+margin:auto;
+position:fixed;
+top:0;
+width: 20%;
+height: 50%;
+left:0;
+right:0;
+bottom:0;
+ z-index: 999;
+ transition-duration:1s;
+
+	li {
+	list-style-type:none;
+	}
+	a {
+	text-decoration:none;
+	font-size:76px;
+	transition-duration:1s;
+    color:rgba(255, 0, 0, 0.6);
+	&:hover {
+	color:white;
+	text-shadow: 3px 0px 20px black;
+
+	}
+	}
+}
+.menu-close {
+   position:relative;
+	width:40px;
+	height:40px;
+	background:rgba(255, 0, 0, 0.6);
+	bottom:400px;
+	left:300px;
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+	cursor:pointer;
+
+}
+.show-menu {
+	display:block;
+}

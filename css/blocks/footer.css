@@ -1,0 +1,102 @@
+.container-footer .wrapper {
+  min-height: 750px;
+  background: #efefef url(../img/footerBack.png) no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container-footer__title {
+  margin-top: 104px;
+  width: 60%;
+  margin-bottom: 100px;
+  text-align: center; }
+  .container-footer__title h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif; }
+  .container-footer__title span {
+    font-size: 18px; }
+
+.container-footer form {
+  width: 39%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .container-footer form #email {
+    width: 46%;
+    height: 43px;
+    border: 1px solid black;
+    outline: none;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding-left: 1%;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    .container-footer form #email:focus {
+      -webkit-box-shadow: 0px 0px 10px 2px black;
+              box-shadow: 0px 0px 10px 2px black; }
+  .container-footer form #subject {
+    width: 46%;
+    height: 43px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 30px;
+    padding-left: 1%;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    .container-footer form #subject:focus {
+      -webkit-box-shadow: 0px 0px 10px 2px black;
+              box-shadow: 0px 0px 10px 2px black; }
+  .container-footer form textarea {
+    outline: none;
+    width: 98%;
+    height: 104px;
+    padding-top: 15px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    resize: none;
+    padding-left: 2%;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    .container-footer form textarea:focus {
+      -webkit-box-shadow: 0px 0px 10px 2px black;
+              box-shadow: 0px 0px 10px 2px black; }
+  .container-footer form button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s; }
+    .container-footer form button:hover {
+      text-shadow: 1px 2px 3px white; }
+
+.container-footer ::-webkit-input-placeholder {
+  color: black;
+  padding-left: 1%;
+  font-size: 16px; }
